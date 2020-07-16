@@ -1,24 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+// import MapFun from "./components/mapFun";
+import Child from "./components/Child";
+
+import "./App.css";
 
 function App() {
+ const cityArray1 = ["karachi", "islamabad", "Lahore", "Peshawar"];
+ const cityArray2 = ["Baloli", "swat", "btk", "sami"];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+      {/* <MapFun name="Najib" /> */}
+      <Child cityArray={cityArray1} />
+      <Child cityArray={cityArray2} />
+      
     </div>
   );
 }
